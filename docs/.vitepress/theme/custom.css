@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/futura-std-4?styles=52567,52568,52565,52566');
+@import url('https://fonts.cdnfonts.com/css/helvetica-lt-std?styles=21145');
+
 :root {
     --vp-c-black: #202020;
     --vp-c-gray: #e6e6e6;
@@ -6,5 +9,8 @@
     --vp-c-green-lighter: #6fca3a;
     --vp-c-green-dark: #437d21;
     --vp-c-green-darker: #437d21;
+
+    --vp-font-family-base: 'Futura Std', 'Helvetica LT Std', ui-sans-serif, sans-serif;
+    --vp-font-family-mono: ui-monospace, monospace;
 }
   
