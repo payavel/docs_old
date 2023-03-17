@@ -1,6 +1,9 @@
 export default {
     title: 'Payavel',
     description: 'Payment integration for Laravel Developers',
+    head: [
+        ['link', { rel: 'icon', type: 'image/svg+xml', href: 'icon.svg' }],
+    ],
     themeConfig: {
         logo: { light: '/logo-light.png', dark: 'logo-dark.png', alt: 'Payavel' },
         siteTitle: false,
