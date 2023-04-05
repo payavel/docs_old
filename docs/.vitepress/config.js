@@ -19,6 +19,28 @@ export default {
                 activeMatch: '/api'
             }
         ],
+        sidebar: {
+            '/guide': [
+                {
+                    text: 'Getting Started',
+                    collapsed: true,
+                    items: [
+                        {
+                            text: 'Introduction',
+                            link: '/guide',
+                        },
+                        {
+                            text: 'Quick Start',
+                            link: '/guide/quick-start'
+                        },
+                        {
+                            text: 'Manual setup',
+                            link: '/guide/manual-setup'
+                        }
+                    ]
+                }
+            ]
+        },
         footer: {
             message: 'Released under the MIT License',
             copyright: 'Copyright © ' + (new Date).getFullYear() + ' Robert Kujawa'
