@@ -23,7 +23,7 @@ export default {
             '/guide': [
                 {
                     text: 'Getting Started',
-                    collapsed: true,
+                    collapsed: false,
                     items: [
                         {
                             text: 'Introduction',
@@ -34,8 +34,36 @@ export default {
                             link: '/guide/quick-start'
                         },
                         {
-                            text: 'Manual setup',
+                            text: 'Manual Setup',
                             link: '/guide/manual-setup'
+                        }
+                    ]
+                },
+                {
+                    text: 'Fundamentals',
+                    collapsed: false,
+                    items: [
+                        {
+                            text: 'Providers',
+                            link: '/guide/providers'
+                        },
+                        {
+                            text: 'Merchants',
+                            link: '/guide/merchants'
+                        },
+                        {
+                            text: 'Config',
+                            link: '/guide/config'
+                        }
+                    ]
+                },
+                {
+                    text: 'Digging Deeper',
+                    collapsed: false,
+                    items: [
+                        {
+                            text: 'Drivers',
+                            link: '/guide/drivers'
                         }
                     ]
                 }
