@@ -1,6 +1,7 @@
 export default {
     title: 'Payavel',
     description: 'Payment integration for Laravel Developers',
+    cleanUrls: true,
     head: [
         ['link', { rel: 'icon', type: 'image/svg+xml', href: 'icon.svg' }],
     ],
