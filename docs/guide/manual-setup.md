@@ -12,7 +12,7 @@ php artisan vendor:publish --provider='Payavel\Checkout\PaymentServiceProvider'
 
 ## Configuration
 
-Once published, the `payment.php` config file will need to be updated as we generate payment providers & merchants along the way. More detailed information on this [here](config).
+Once published, the `payment.php` config file will need to be updated as we generate payment providers & merchants along the way. More detailed information on this [here](providers#configuration).
 
 ```php
 
