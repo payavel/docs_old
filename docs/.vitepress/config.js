@@ -51,10 +51,6 @@ export default {
                         {
                             text: 'Merchants',
                             link: '/guide/merchants'
-                        },
-                        {
-                            text: 'Config',
-                            link: '/guide/config'
                         }
                     ]
                 },
