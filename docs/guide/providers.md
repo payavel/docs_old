@@ -21,6 +21,7 @@ Don't be overwhelmed, all that you need to do is integrate the gateway with the 
 In order for requests to be processed through the gateway we have created, it is important to register it in `config/payment.php` and assign it to at least one merchant.
 
 ```php
+
 [
 
     'providers' => [
@@ -49,6 +50,7 @@ In order for requests to be processed through the gateway we have created, it is
     ],
 
 ]
+
 ```
 
 :::info Via the database driver
