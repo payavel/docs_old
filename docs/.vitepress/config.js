@@ -59,8 +59,26 @@ export default {
                     collapsed: false,
                     items: [
                         {
+                            text: 'Architecture',
+                            link: '/guide/architecture'
+                        },
+                        {
                             text: 'Drivers',
                             link: '/guide/drivers'
+                        }
+                    ]
+                },
+                {
+                    text: 'Testing',
+                    collapsed: false,
+                    items: [
+                        {
+                            text: 'Test Mode',
+                            link: '/guide/testing'
+                        },
+                        {
+                            text: 'Mocking',
+                            link: '/guide/mocking'
                         }
                     ]
                 }
