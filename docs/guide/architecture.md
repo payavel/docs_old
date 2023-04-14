@@ -1,4 +1,3 @@
-## Architecture Concepts
+# Architecture Concepts
 
 Coming soon...
-
