@@ -33,10 +33,6 @@ export default {
                         {
                             text: 'Quick Start',
                             link: '/guide/quick-start'
-                        },
-                        {
-                            text: 'Manual Setup',
-                            link: '/guide/manual-setup'
                         }
                     ]
                 },
