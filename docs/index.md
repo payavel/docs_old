@@ -17,5 +17,5 @@ hero:
         link: /api
       - theme: alt
         text: View on GitHub
-        link: https://github.com/payavel/payavel
+        link: https://github.com/payavel/checkout
 ---
