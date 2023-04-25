@@ -17,7 +17,7 @@
   "author": "Robert Kujawa",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.46",
+    "vitepress": "^1.0.0-alpha.74",
     "vue": "^3.2.47"
   }
 }

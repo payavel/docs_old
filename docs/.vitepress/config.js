@@ -1,88 +1,102 @@
-export default {
-    title: 'Payavel',
-    description: 'Payment integration for Laravel Developers',
-    cleanUrls: true,
-    head: [
-        ['link', { rel: 'icon', type: 'image/svg+xml', href: 'icon.svg' }],
-    ],
-    themeConfig: {
-        logo: { light: '/logo-light.png', dark: 'logo-dark.png', alt: 'Payavel' },
-        siteTitle: false,
-        nav: [
-            {
-                text: 'Guide',
-                link: '/guide',
-                activeMatch: '/guide'
-            },
-            {
-                text: 'API',
-                link: '/api',
-                activeMatch: '/api'
-            }
+import { defineConfig, loadEnv } from 'vitepress';
+
+export default defineConfig(({ command, mode }) => {
+    const env = loadEnv(mode, process.cwd());
+
+    return {
+        title: 'Payavel',
+        description: 'Payment integration for Laravel Developers',
+        cleanUrls: true,
+        head: [
+            ['link', { rel: 'icon', type: 'image/svg+xml', href: 'icon.svg' }],
         ],
-        sidebar: {
-            '/guide': [
+        themeConfig: {
+            logo: { light: '/logo-light.png', dark: 'logo-dark.png', alt: 'Payavel' },
+            siteTitle: false,
+            nav: [
                 {
-                    text: 'Getting Started',
-                    collapsed: false,
-                    items: [
-                        {
-                            text: 'Introduction',
-                            link: '/guide',
-                        },
-                        {
-                            text: 'Quick Start',
-                            link: '/guide/quick-start'
-                        }
-                    ]
+                    text: 'Guide',
+                    link: '/guide',
+                    activeMatch: '/guide'
                 },
                 {
-                    text: 'Fundamentals',
-                    collapsed: false,
-                    items: [
-                        {
-                            text: 'Providers',
-                            link: '/guide/providers'
-                        },
-                        {
-                            text: 'Merchants',
-                            link: '/guide/merchants'
-                        }
-                    ]
-                },
-                {
-                    text: 'Digging Deeper',
-                    collapsed: false,
-                    items: [
-                        {
-                            text: 'Architecture',
-                            link: '/guide/architecture'
-                        },
-                        {
-                            text: 'Drivers',
-                            link: '/guide/drivers'
-                        }
-                    ]
-                },
-                {
-                    text: 'Testing',
-                    collapsed: false,
-                    items: [
-                        {
-                            text: 'Test Mode',
-                            link: '/guide/testing'
-                        },
-                        {
-                            text: 'Mocking',
-                            link: '/guide/mocking'
-                        }
-                    ]
+                    text: 'API',
+                    link: '/api',
+                    activeMatch: '/api'
                 }
-            ]
-        },
-        footer: {
-            message: 'Released under the MIT License',
-            copyright: 'Copyright © ' + (new Date).getFullYear() + ' Robert Kujawa'
+            ],
+            sidebar: {
+                '/guide': [
+                    {
+                        text: 'Getting Started',
+                        collapsed: false,
+                        items: [
+                            {
+                                text: 'Introduction',
+                                link: '/guide',
+                            },
+                            {
+                                text: 'Quick Start',
+                                link: '/guide/quick-start'
+                            }
+                        ]
+                    },
+                    {
+                        text: 'Fundamentals',
+                        collapsed: false,
+                        items: [
+                            {
+                                text: 'Providers',
+                                link: '/guide/providers'
+                            },
+                            {
+                                text: 'Merchants',
+                                link: '/guide/merchants'
+                            }
+                        ]
+                    },
+                    {
+                        text: 'Digging Deeper',
+                        collapsed: false,
+                        items: [
+                            {
+                                text: 'Architecture',
+                                link: '/guide/architecture'
+                            },
+                            {
+                                text: 'Drivers',
+                                link: '/guide/drivers'
+                            }
+                        ]
+                    },
+                    {
+                        text: 'Testing',
+                        collapsed: false,
+                        items: [
+                            {
+                                text: 'Test Mode',
+                                link: '/guide/testing'
+                            },
+                            {
+                                text: 'Mocking',
+                                link: '/guide/mocking'
+                            }
+                        ]
+                    }
+                ]
+            },
+            footer: {
+                message: 'Released under the MIT License',
+                copyright: 'Copyright © ' + (new Date).getFullYear() + ' Robert Kujawa'
+            },
+            search: {
+                provider: 'algolia',
+                options: {
+                    appId: 'LQGO3UK46R',
+                    apiKey: env.VITE_ALGOLIA_API_KEY,
+                    indexName: 'payavel'
+                }
+            }
         }
-    }
-}
+    };
+})
